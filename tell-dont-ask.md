@@ -152,7 +152,7 @@ class Patient {
 
 
 
-### Prep some computed props
+### Prep some computed props and a `triage` method
 
 ```dart [19-32 | 34-45]
 class Patient {
@@ -204,7 +204,7 @@ class Patient {
 ```
 
 <span class="fragment">
-  `Patient` is no longer anemic, it has behavior bundled with state inside the class!
+  `Patient` is no longer anemic!
 </span>
 
 
@@ -260,4 +260,4 @@ If you've already read **Effective Dart**, you might have encountered this recom
     + save data ➡ load data ➡ repeat
   - they're friendly reminders
     + <span style="color: green">👍</span> Tell Don't Ask is a reminder what OOP is about
-    + <span style="color: red">👎</span> and Anemic Domain Models is a reminder what OOP isn't about
+    + <span style="color: red">👎 </span> and Anemic Domain Models is a reminder what OOP isn't about
