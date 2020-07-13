@@ -229,7 +229,7 @@ void main() {
       advanced student?  check your MVC code for fat controllers</small>
     </li>
   </ul>
-  
+
 
 
 ### And yup, sometimes refactoring is just moving around some code
@@ -245,3 +245,19 @@ If you've already read **Effective Dart**, you might have encountered this recom
 
 > When in doubt about naming, write some code that uses your ~~API~~ classes and methods, and 
 > try to read it like a sentence.
+
+
+
+### What if I can't find a behavior?
+
+* Then it's just a class that holds some data, don't force it.
+  - with every rule there's an exception
+  - that's why it's called a **principle**, not a **law**
+    + like law of gravity
+    + Newton's laws
+  - intuition will improve with experience
+  - some apps are just that
+    + save data ➡ load data ➡ repeat
+  - they're friendly reminders
+    + <span style="color: green">👍</span> Tell Don't Ask is a reminder what OOP is about
+    + <span style="color: red">👎</span> and Anemic Domain Models is a reminder what OOP isn't about
