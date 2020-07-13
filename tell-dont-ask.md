@@ -264,4 +264,4 @@ void main() {
     + save data ➡ load data ➡ repeat
   - they're friendly reminders
     + <span style="color: green">👍</span> Tell Don't Ask is a reminder what OOP is about
-    + <span style="color: red">👎 </span> and Anemic Domain Models is a reminder what OOP isn't about
+    + <span style="color: red">👎 </span> and Anemic Domain Model is a reminder what OOP isn't about
