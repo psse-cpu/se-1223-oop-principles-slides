@@ -219,10 +219,17 @@ void main() {
 ```
 
 * Wait, you just moved around some code && shortened the main function! <!--  .element class="fragment -->
-  - This goes deeper, to repeat -- _ask, ask, and ask_ and your Flutter code in the future will have tons 
-    of  _**business logic**_ code inside things like `triageButton.onPressed`.
-    + advanced student?  check your MVC code for fat controllers <!-- .element class="fragment" -->
-
+  <ul>
+    <li class="fragment">
+      This goes deeper, to repeat -- <i>ask, ask, and ask</i> and your Flutter code in the future
+      will have tons of  <b><i>business logic</i></b> code inside things like 
+      `triageButton.onPressed`.
+    </li>
+    <li class="fragment">
+      advanced student?  check your MVC code for fat controllers</small>
+    </li>
+  </ul>
+  
 
 
 ### And yup, sometimes refactoring is just moving around some code
