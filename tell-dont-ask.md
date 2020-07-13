@@ -203,8 +203,9 @@ class Patient {
 }
 ```
 
-`Patient` is no longer anemic, it has behavior bundled with state inside the class!
-
+<span class="fragment">
+  `Patient` is no longer anemic, it has behavior bundled with state inside the class!
+</span>
 
 
 ### TELL the `Patient` object what to do, AND NOT ASK, ASK, ASK
