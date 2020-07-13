@@ -219,7 +219,7 @@ void main() {
 ```
 
 * Wait, you just moved around some code && shortened the main function! <!--  .element class="fragment -->
-  - This goes deepe, to repeat -- _ask, ask, and ask_ and your Flutter code in the future will have tons 
+  - This goes deeper, to repeat -- _ask, ask, and ask_ and your Flutter code in the future will have tons 
     of  _**business logic**_ code inside things like `triageButton.onPressed`.
     + advanced student?  check your MVC code for fat controllers <!-- .element class="fragment" -->
 
