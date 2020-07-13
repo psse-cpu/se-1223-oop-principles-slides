@@ -7,12 +7,13 @@
 ### Using an OO-language does not mean using OOP (properly)
 
 * A codebase full of *antipatterns* is surely the quickest way to inspire someone to write a tech 
-  blog article entittled 
+  ~~rant~~ blog article entittled 
   + _"OOP's broken promises"_
   + _"OOP is a scam"_
   + _"Why I hate OOP"_
   + _"OOP is dangerous"_
   + or something along those lines
+    - OOP does have criticisms, yes, but we can't fight a mainstream paradigm yet
 
 
 
