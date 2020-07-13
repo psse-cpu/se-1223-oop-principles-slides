@@ -173,7 +173,7 @@ class Patient {
     return _classification;
   }
 
-  bool get hasTravelHistory { return travelHistory != null; }
+  bool get hasTravelled { return lastTravelDate != null; }
 
   bool get hasFever { return currentTemperature >= 38; }
 
@@ -190,7 +190,7 @@ class Patient {
 
   void triage() {
     _classification = 'normal';    
-    if (!hasTravelHistory) return; // exit the method
+    if (!hasTravelled) return; // exit the method
 
     if (hasRecentTravelHistory || hasExposure) {
       classification = 'PUM';
