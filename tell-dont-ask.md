@@ -240,11 +240,15 @@ void main() {
 
 ### But our new code is more readable
 
-If you've already read **Effective Dart**, you might have encountered this recommendation:
-+ **CONSIDER** making the code read like a sentence.
++ It's also properly structured and easier to navigate.  Professional software engineers will look 
+  for business logic in your domain model classes!
 
-> When in doubt about naming, write some code that uses your ~~API~~ classes and methods, and 
-> try to read it like a sentence.
++ If you've already read **Effective Dart**, you might have encountered this recommendation:
+  
+  - **CONSIDER** making the code read like a sentence.
+
+    * When in doubt about naming, write some code that uses your ~~API~~ classes and methods, and 
+      try to read it like a sentence.
 
 
 
