@@ -14,7 +14,8 @@
   + _"OOP is dangerous"_
   + or something along those lines
     - Disclaimer: OOP does have flaws, but fighting a mainstream paradigm is a losing fight
-    - (Flutter is OOP-ish, has 100k stars and is not going away)
+    - Flutter [has tons of OOP](https://flutter.dev/docs/resources/faq#what-programming-paradigm-does-flutters-framework-use), 
+      has 100k stars and is not going away)
 
 
 
