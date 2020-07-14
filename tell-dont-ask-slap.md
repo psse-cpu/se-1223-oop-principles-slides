@@ -62,7 +62,7 @@ void main() {
     exit(0);
   }
 
-  final twoWeeks = Duration({ days: 14 });
+  final twoWeeks = Duration(days: 14);
   final twoWeeksAgo = DateTime.now().subtract(twoWeeks);
   
   if (fishy.lastTravelDate.isAfter(twoWeeksAgo) || // ask
@@ -205,14 +205,14 @@ class Patient {
       return; // exit the method
     }
 
-    final twoWeeks = Duration({ days: 14 });
+    final twoWeeks = Duration(days: 14);
     final twoWeeksAgo = DateTime.now().subtract(twoWeeks);
     
     if (hasRecentTravelHistory || hasExposure) {
-      classification = 'PUM';
+      _classification = 'PUM';
 
       if (hasFever || hasRespiratorySymptoms) {
-        classification = 'PUI';
+        _classification = 'PUI';
       }
     }
   }
@@ -259,7 +259,7 @@ class Patient {
   }
 
   bool get hasRecentTravelHistory {
-    final twoWeeks = Duration({ days: 14 });
+    final twoWeeks = Duration(days: 14);
     final twoWeeksAgo = DateTime.now().subtract(twoWeeks);
     return lastTravelDate.isAfter(twoWeeksAgo);
   }
@@ -269,10 +269,10 @@ class Patient {
     if (!hasTravelled) return; // exit the method
 
     if (hasRecentTravelHistory || hasExposure) {
-      classification = 'PUM';
+      _classification = 'PUM';
 
       if (hasFever || hasRespiratorySymptoms) {
-        classification = 'PUI';
+        _classification = 'PUI';
       }
     }
   }
