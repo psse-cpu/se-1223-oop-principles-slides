@@ -112,7 +112,7 @@ class Fraction {
 }
 ```
 
-Is our code repetitive?
+Is our code repetitive? <!-- .element class="fragment" -->
 
 
 
