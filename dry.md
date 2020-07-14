@@ -409,5 +409,5 @@ class Dog {
 }
 ```
 
-- WET? ❌
-- Stringly-typed? ❌
+- WET? ❌  <!-- .element class="fragment" -->
+- Stringly-typed? ❌  <!-- .element class="fragment" -->
