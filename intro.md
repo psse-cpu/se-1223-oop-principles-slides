@@ -6,12 +6,11 @@
 
 ### Using an OO-language does not mean using OOP (properly)
 
+* Even if it's a language where everything should be inside a class (e.g. C#, Java)
 * A codebase full of *antipatterns* is the quickest way to inspire someone to blog tech 
   ~~rant~~ articles like:
-  + _"OOP's broken promises"_
   + _"OOP is a scam"_
   + _"Why I hate OOP"_
-  + _"OOP is dangerous"_
   + or something along those lines
     - Disclaimer: OOP does have flaws, but fighting a mainstream paradigm is a losing fight
     - Flutter [has tons of OOP](https://flutter.dev/docs/resources/faq#what-programming-paradigm-does-flutters-framework-use), 
