@@ -41,6 +41,7 @@ The simplest cure for anemic objects.
 ![triage](images/triage.png)
 
 
+
 ### Anemic Domain Model for Patient
 
 ```dart [1-7 | 13 | 21 | 22 | 25 | 26]
@@ -96,9 +97,77 @@ external** _(user-observable)_ **behavior.**
 
 ### We can just copy-paste `void main` into `Patient.triage()`
 
-Can we do better?
+And find-replace all instances of `fishy` into `this`.  Can we do better?
 
-Let's obey another principle while we're at it.
+* We do have a very long main function.  So let's take a short detour and introduce a principle 
+  that's applicable to any kind of function.
+  - functions (pure and impure)
+  - procedures
+  - methods
+
+
+
+### Single Level of Abstraction Principle (SLAP)
+
+![batman](images/batman.jpg)
+
+
+
+### 👎 long, unreadable methods (1/3)
+
+![no slap](images/no-slap.png)
+
+nested control structures are the most common symptom of functions that sorta look like this
+
+
+
+### 👎 long, unreadable methods (2/3)
+
+![long func](images/long-func.png)
+
+another symptom is the long function broken into logical sections, and some comments sprinkled
+
+
+### 👎 long, unreadable methods (3/3)
+
++ Long functions/methods are:
+  * hard to read and remember
+    - since they are hard to follow
+  * hard to test and debug
+    - and will result in more bugs
+  * conceal business rules
+  * hard to reuse and lead to duplication
+  * have a higher probability to change
+  * harder to optimize
+  * prone to obsolete comments
+  * <u>\_\_\____insert your experience here___\_\_\_</u>
+
+
+
+### 👍 short, readable methods (1/2)
+
+![slap](images/slap.png)
+
+break apart long functions into smaller pieces and ~~assemble~~ _compose_ them in some other 
+function
+
+
+### 👍 short, readable methods (2/2)
+
+![extract](images/extract.png)
+
+these logical sections should be extracted into methods or getters, whichever makes more sense
+
+
+
+## Detour ends
+
+![detour ends](images/end-detour.jpg)
+
+* Let's start refactoring, and remember our goal is to abide by these principles:
+  1. Tell Don't Ask
+  2. Single Level of Abstraction Principle (SLAP)
+
 
 
 ### Prep a getter for privates
@@ -225,7 +294,7 @@ void main() {
 }
 ```
 
-* Wait, you just moved around some code && shortened the main function! <!--  .element class="fragment -->
+* Wait, move some code around and all that to shorten main to 3 lines? <!--  .element class="fragment" -->
   <ul>
     <li class="fragment">
       This goes deeper, to repeat -- <i>ask, ask, and ask</i> and your Flutter code in the future
@@ -233,7 +302,7 @@ void main() {
       `triageButton.onPressed`.
     </li>
     <li class="fragment">
-      advanced student?  check your MVC code for fat controllers</small>
+      advanced student?  check your MVC code for fat controllers
     </li>
   </ul>
 
@@ -245,17 +314,17 @@ void main() {
 
 
 
-### But our new code is more readable
+### Our new code is more readable
 
-+ It's also properly structured and easier to navigate.  Professional software engineers will look 
-  for business logic in your domain model classes!
++ It's properly structured and easier to navigate. 
+  - Professional software engineers will look for business logic in your domain model classes 
+  - so **Tell, Don't Ask**!
 
-+ If you've already read **Effective Dart**, you might have encountered this recommendation:
-  
++ **Effective Dart** also has this recommendation:
   - **CONSIDER** making the code read like a sentence.
-
     * When in doubt about naming, write some code that uses your ~~API~~ classes and methods, and 
       try to read it like a sentence.
+  - So try to SLAP your code.
 
 
 
@@ -264,11 +333,11 @@ void main() {
 * Then it's just a class that holds some data, don't force it.
   - with every rule there's an exception
   - that's why it's called a **principle**, not a **law**
-    + like law of gravity
-    + Newton's laws
+    + like law of gravity or Newton's laws
   - intuition will improve with experience
   - some apps are just that
     + save data ➡ load data ➡ repeat
   - they're friendly reminders
     + <span style="color: green">👍</span> Tell Don't Ask is a reminder what OOP is about
     + <span style="color: red">👎 </span> and Anemic Domain Model is a reminder what OOP isn't about
+    + <span style="color: green">👍</span> SLAP makes our code more readable
