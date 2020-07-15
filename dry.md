@@ -141,7 +141,9 @@ class Fraction {
 }
 ```
 
-Can you do `multiply` and `divide`?  #stayDRY   <!-- .element class="fragment" -->
+<span class="fragment">
+  Can you do <code>multiply</code> and <code>divide</code>?  #stayDRY
+</span>
 
 
 
