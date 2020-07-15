@@ -349,7 +349,7 @@ class Dog {
   - Give other examples of data that can only have a few values:
     + gender
     + civil status
-    + your example? (show-off on this Canvas discussion)
+    + your example? (show-off on [this Canvas discussion](https://canvas.instructure.com/courses/2109863/discussion_topics/9353138))
 
 
 

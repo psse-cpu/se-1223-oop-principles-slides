@@ -140,7 +140,7 @@ another symptom is the long function broken into logical sections, and some comm
   * have a higher probability to change
   * harder to optimize
   * prone to obsolete comments
-  * <u>\_\_\____insert your experience here___\_\_\_</u>
+  * <u>\_\_\____insert your experience here___\_\_\_</u> ([share here](https://canvas.instructure.com/courses/2109863/discussion_topics/9353136))
 
 
 
