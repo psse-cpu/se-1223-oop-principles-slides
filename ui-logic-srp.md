@@ -24,7 +24,7 @@ class Patient {
 It only works in the CLI! <!-- .element class="fragment" -->
 
 <span class="fragment">
-  <code>print</code> does produce output on mobile or web apps.
+  <code>print</code> won't produce output on mobile or web apps.
 </span>
 
 
