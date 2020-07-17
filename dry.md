@@ -163,7 +163,7 @@ I can PM you the Shopee link for this keyboard <!-- .element class="fragment" --
 
 
 
-### Maybe your WET code is one parameter away from being DRY (1/2)
+### Maybe your WET code is one param away from being DRY (1/2)
 
 ```dart 
 class Dog {
@@ -185,7 +185,7 @@ class Dog {
 
 
 
-### Maybe your WET code is one parameter away from being DRY (2/2)
+### Maybe your WET code is one param away from being DRY (2/2)
 
 ```dart 
 class Dog {
