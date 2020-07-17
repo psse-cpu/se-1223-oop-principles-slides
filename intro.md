@@ -3,8 +3,8 @@ Object-oriented Programming Principles
 
 <small>
   <span style="color: darkblue;">&lt;</span><span style="color: goldenrod;">/&gt;</span>
-  <a href="https://github.com/psse-cpu/se-1223-inheritance-slides">
-    https://github.com/psse-cpu/se-1223-inheritance-slides
+  <a href="https://github.com/psse-cpu/se-1223-oop-principles-slides">
+    https://github.com/psse-cpu/se-1223-oop-principles-slides
   </a>
 </small>
 
