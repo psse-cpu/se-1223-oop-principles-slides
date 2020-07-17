@@ -27,6 +27,22 @@ Object-oriented Programming Principles
 
 
 
+### Outline
+
+* antipatterns
+  - Anemic Domain Model
+* principles
+  - Tell Don't Ask
+  - Single Level of Abstraction Principle (SLAP)
+  - Don't Repeat Yourself (DRY)
+    + Rule of Three
+    + Recognizing and refactoring redundancy
+  - Separate UI from Business Logic
+  - Single Responsibility Principle (SRP)
+* enums and stringly-typed code
+
+
+
 ### Easy to learn, difficult to master
 
 ![again](images/again.jpeg) <!-- .element style="width: 788px; height: 443px" -->
