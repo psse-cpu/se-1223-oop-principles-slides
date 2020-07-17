@@ -22,15 +22,30 @@
       code {
         font-family: 'IBM Plex Mono', monospace !important;
       }
+
+      .course-code {
+        border-radius: 16px 0px 0px 16px; 
+        background-color: #3e2b72;
+        padding: 4px 8px 4px 8px;
+        color: #f4cb3d;
+        box-shadow: 4px 4px 8px -2px gray;
+      }
+
+      .course-title {
+        margin-left: -8px;
+        border-left: 0px;
+        text-transform: none;
+        padding: 4px 8px;
+        border-radius: 0px 16px 16px 0px;
+        color: #3e2b72;
+        background-color: #f4cb3d;
+        box-shadow: 0px 4px 8px -2px gray;
+      }
     </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-        <section>
-          <h1>OOP Principles</h1>
-				</section>
-				
 				<section data-markdown="intro.md" data-separator-vertical="\n\n\n"></section>				
 				<section data-markdown="tell-dont-ask-slap.md" data-separator-vertical="\n\n\n"></section>				
 				<section data-markdown="dry.md" data-separator-vertical="\n\n\n"></section>
@@ -38,18 +53,14 @@
 								 data-separator-vertical="\n\n\n"
 								 data-separator-notes="cheatsheets"
 				> <!-- Conflict with things to note: in last slide -->
-
 				</section>
-
-				<section>
-					<h2>&& that's it for OOP Principles!</h2>
-				</section>
+				<section data-markdown="outro.md" data-separator-vertical="\n\n\n"></section>
 			</div>
     </div>		    
 
     <footer style="position: fixed; bottom: 8px; margin-left: 8px;">
-      <img src="images/cpu-logo.png" style="width: 64px; height: 64px;" alt="CP Logo">
-      <img src="images/se-logo.jpg" style="width: 64px; height: 64px;" alt="SE Logo">				
+      <img src="images/cpu-logo.png" class="logo" alt="CP Logo">
+      <img src="images/se-logo.jpg" class="logo" alt="SE Logo">				
     </footer>
 
 		<script src="dist/reveal.js"></script>
