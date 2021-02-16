@@ -191,13 +191,12 @@ class Patient {
     return _classification;
   }
 
-  bool get hasTravelHistory { return travelHistory != null; }
-  bool get hasFever { return currentTemperature >= 38; }
-  bool get hasRespiratorySymptoms {
+  bool get hasTravelHistory => travelHistory != null;
+  bool get hasFever => currentTemperature >= 38;
+  bool get hasRespiratorySymptoms => 
     return otherSymptoms.contains('cough') ||
            otherSymptoms.contains('shortness of breath');
-  }
-
+  
   void triage() {
     _classification = 'normal';
     
@@ -249,15 +248,14 @@ class Patient {
     return _classification;
   }
 
-  bool get hasTravelled { return lastTravelDate != null; }
-
-  bool get hasFever { return currentTemperature >= 38; }
-
-  bool get hasRespiratorySymptoms {
+  bool get hasTravelHistory => travelHistory != null;
+  
+  bool get hasFever => currentTemperature >= 38;
+  
+  bool get hasRespiratorySymptoms => 
     return otherSymptoms.contains('cough') ||
            otherSymptoms.contains('shortness of breath');
-  }
-
+  
   bool get hasRecentTravelHistory {
     final twoWeeks = Duration(days: 14);
     final twoWeeksAgo = DateTime.now().subtract(twoWeeks);
