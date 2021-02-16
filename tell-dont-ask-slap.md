@@ -183,7 +183,7 @@ class Patient {
   bool _triaged = false;
 
   String get classification { 
-    if (!triaged) { // ensure classification is not null
+    if (!_triaged) { // ensure classification is not null
       triage();     // and avoids sequential coupling
       _triaged = true;
     }
