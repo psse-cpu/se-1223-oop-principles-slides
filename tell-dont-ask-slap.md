@@ -194,8 +194,8 @@ class Patient {
   bool get hasTravelHistory => travelHistory != null;
   bool get hasFever => currentTemperature >= 38;
   bool get hasRespiratorySymptoms => 
-    return otherSymptoms.contains('cough') ||
-           otherSymptoms.contains('shortness of breath');
+    therSymptoms.contains('cough') ||
+    otherSymptoms.contains('shortness of breath');
   
   void triage() {
     _classification = 'normal';
@@ -253,8 +253,8 @@ class Patient {
   bool get hasFever => currentTemperature >= 38;
   
   bool get hasRespiratorySymptoms => 
-    return otherSymptoms.contains('cough') ||
-           otherSymptoms.contains('shortness of breath');
+    otherSymptoms.contains('cough') ||
+    otherSymptoms.contains('shortness of breath');
   
   bool get hasRecentTravelHistory {
     final twoWeeks = Duration(days: 14);
